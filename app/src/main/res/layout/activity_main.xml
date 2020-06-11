@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".util.MainActivity"
+    tools:context="com.example.SMSManager.util.MainActivity"
     android:orientation="vertical">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -13,13 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
+        android:layout_marginEnd="20dp"
         android:layout_marginRight="30dp"
         android:layout_marginBottom="20dp"
         android:clickable="true"
-        app:fabSize="normal"
-        app:srcCompat="@android:drawable/ic_input_add"
         android:focusable="true"
-        android:layout_marginEnd="20dp" />
+        android:src="@drawable/baseline_add_circle_outline_black_18dp"
+        android:scaleType="fitXY"
+        app:fabSize="normal"
+        fab:backgroundTint="#1ED761" />
 
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -33,7 +35,7 @@
             app:srcCompat="@android:drawable/ic_input_add"
             android:clickable="true"
             android:focusable="true"
-            android:text="Filter"
+            android:text="Edit Filter"
             app:fabSize="mini" />
 
 
@@ -47,10 +49,11 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="100dp"
         app:fabSize="mini"
-        android:text="Category"
+        android:text="ADD SMS BOX"
         android:clickable="true"
         android:focusable="true"
-        android:layout_marginEnd="30dp" />
+        android:layout_marginEnd="30dp"
+        />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
@@ -60,20 +63,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabBackground="@color/colorAccent"
-        app:tabIndicatorColor="#18ffff"
-        app:tabRippleColor="#00e5ff"
+        app:tabIndicatorColor="#59615e"
+        app:tabRippleColor="#9bcca6"
         app:tabTextColor="#000000">
 
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Monday" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/tab2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Tuesday" />
 
