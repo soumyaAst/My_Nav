@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffffff">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_filter"
@@ -28,8 +29,11 @@
         android:id="@+id/add_filter_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:fontFamily="@font/assistant"
         android:hint="Add To Category"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/add_filter_btn"
@@ -45,7 +49,10 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:fontFamily="@font/assistant_semibold"
+        android:background="#90448AFF"
         android:text="Add Filter"
+        android:textColorHighlight="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cat_spinner" />
 </androidx.constraintlayout.widget.ConstraintLayout>
