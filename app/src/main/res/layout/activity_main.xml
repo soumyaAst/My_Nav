@@ -21,7 +21,7 @@
         android:src="@drawable/baseline_add_circle_outline_black_18dp"
         android:scaleType="fitXY"
         app:fabSize="normal"
-        fab:backgroundTint="#1ED761" />
+        fab:backgroundTint="#80448AFF" />
 
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
@@ -63,8 +63,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tabBackground="@color/colorAccent"
-        app:tabIndicatorColor="#59615e"
-        app:tabRippleColor="#9bcca6"
+        app:tabIndicatorColor="#3F51B5"
+        app:tabRippleColor="#C5CAE9"
         app:tabTextColor="#000000">
 
 
